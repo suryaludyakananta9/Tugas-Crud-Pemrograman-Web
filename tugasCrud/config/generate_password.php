@@ -1,6 +1,6 @@
 <?php
 echo password_hash(
-"TugasCRUD_",
+"admin123",
 PASSWORD_DEFAULT
 )
 ?>
