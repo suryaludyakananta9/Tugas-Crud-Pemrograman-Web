@@ -2,7 +2,6 @@
 include '../config/koneksi.php';  
 include '../config/middleware.php';
 
-// Query JOIN menggabungkan tabel nilai dengan tabel master terkait [cite: 13]
 $query = mysqli_query($koneksi, "SELECT n.id_nilai, n.nilai_huruf, m.nama, mk.nama_mk, d.nama_dosen 
                                  FROM nilai n
                                  INNER JOIN mahasiswa m ON n.nim = m.nim
