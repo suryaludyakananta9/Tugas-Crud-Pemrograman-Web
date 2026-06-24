@@ -1,8 +1,6 @@
 <?php  
 session_start();  
-include '../config/koneksi.php';  
-
-// Inisialisasi variabel untuk menampung pesan error jika ada
+include '../config/koneksi.php'; 
 $error_message = "";
 
 if (isset($_POST['login'])) {  
