@@ -2,7 +2,6 @@
 include '../config/koneksi.php';
 include '../config/middleware.php';
 
-// Ambil data untuk opsi pilihan dropdown
 $mhs_query = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
 $mk_query  = mysqli_query($koneksi, "SELECT * FROM matakuliah");
 $dsn_query = mysqli_query($koneksi, "SELECT * FROM dosen");
