@@ -3,8 +3,6 @@ include '../config/koneksi.php';
 include '../config/middleware.php';
 
 $id = $_GET['id'];
-
-// Mengambil data nilai lama beserta nama relasinya agar informatif
 $query = mysqli_query($koneksi, "SELECT n.*, m.nama, mk.nama_mk FROM nilai n 
                                  INNER JOIN mahasiswa m ON n.nim = m.nim 
                                  INNER JOIN matakuliah mk ON n.kode_mk = mk.kode_mk 
